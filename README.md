@@ -38,14 +38,14 @@ A PHP & MySQL-based Learning Management System designed for educational institut
 
 ## 📷 Screenshots
 
-### 🔐 Login Page  
-![Login Page](screenshots/login.png)
+### 🔐 Admin Dashboard  
+![Admin Dashbord](institute_project/images/screenshots/admin_dashboard.png)
 
 ### 👨‍🎓 Student Dashboard  
-![Student Dashboard](screenshots/student_dashboard.png)
+![Student Dashboard](institute_project/images/screenshots/student_dashboard.png)
 
-### 🛠️ Admin Panel  
-![Admin Panel](screenshots/admin_panel.png)
+### 🛠️ Lecturer Dashbord  
+![Lecturer Dashbord](institute_project/images/screenshots/lecturer_dashboard.png)
 
 
 
