@@ -1,0 +1,292 @@
+/* General Admin Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container {
+    max-width: 90%; /* Keep a consistent width relative to the viewport */
+    margin: 80px auto 20px auto; /* Center the container */
+    padding: 20px;
+    overflow: auto; /* Allow scrolling if content overflows */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #fff; /* Set a background color for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for elevation */
+    min-height: 90vh; /* Use 'min-height' instead of 'height' */
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px; /* Optional: to ensure text is readable */
+}
+
+.admin-table th, .admin-table td {
+    border: 2px solid #ccc; /* Increased border thickness for better visibility */
+    padding: 10px; /* More padding for readability */
+    text-align: left; /* Left-align text in table cells */
+}
+
+.admin-table th {
+    background-color: #e0e0e0; /* Slightly darker header background */
+    color: #333;
+    text-align: center; /* Center-align text in headers */
+}
+
+.admin-table td {
+    background-color: #fafafa;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Add zebra striping */
+}
+
+.admin-table tr:nth-child(odd) {
+    background-color: #fafafa; /* Retain original background */
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-add:hover {
+    background-color: #45a049;
+}
+
+.btn-edit {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.btn-edit:hover {
+    background-color: #0b7dda;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #e31b0c;
+}
+
+/* Form Styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+/* Navigation Styling */
+.navlocation {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 125px; /* Adjusted for more space */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Ensures nav stays on top */
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Ensure content after nav doesn't overlap */
+body {
+    margin-left: calc(200px + 20px); /* Dynamic margin for body */
+    transition: margin-left 0.3s ease; /* Smooth margin transition */
+}
+
+/* Navigation links */
+.navlocation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width for links */
+}
+
+.navlocation ul li {
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for list items */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.navlocation ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Highlight on hover */
+}
+
+.navlocation ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: bold; /* Bold text for better readability */
+    padding: 10px 15px; /* Padding inside links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navlocation ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    color: #ffd700; /* Highlight color */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative; /* Position relative to its container */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.9); /* Dropdown with slightly transparent background */
+    min-width: 160px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for dropdown */
+    z-index: 999; /* Ensures dropdown stays above other content */
+    top: 100%; /* Position below the dropdown trigger */
+    left: 0; /* Align with dropdown trigger */
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content ul li {
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for dropdown items */
+}
+
+.dropdown-content ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+}
+
+/* Adjusting the button styling */
+form .btn-back {
+    background-color: #3498db;
+    color: rgb(247, 251, 248);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form .btn-back:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+form .btn-back:active {
+    background-color: #1e5f86;
+    transform: translateY(0);
+}
+
+/* Information change section */
+.info-change {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-left: 5px solid #ff5722; /* Orange border to highlight the section */
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.info-change p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+.info-change strong {
+    color: #ff5722; /* Admin email highlighted in orange */
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .dashboard button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* Dropdown styling */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Dropdown hover and focus effects */
+select:hover, select:focus {
+    border-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 0 8px rgba(69, 160, 73, 0.5); /* Green shadow on focus */
+    outline: none;
+}

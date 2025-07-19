@@ -1,0 +1,488 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f98e; /* Light grey color */
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background: #fdfdfd; /* White background for the form */
+    padding: 20px; /* Add padding inside the form */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    max-width: 400px; /* Max width for the form */
+    width: 100%; /* Full width within the max-width */
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0; /* Remove extra padding if needed */
+}
+
+.login-form input[type="text"], 
+.login-form input[type="password"] {
+    width: 100%; /* Full width of the form */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for the input fields */
+    box-sizing: border-box; /* Include padding in the width */
+    font-size: 16px; /* Adjust font size if needed */
+}
+
+.login-form input[type="submit"] {
+    background-color: #007bff; /* Blue background for the submit button */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 100%; /* Full width of the form */
+    margin-top: 10px; /* Space above the button */
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.task2 {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9; /* Light background for visibility */
+    border-radius: 5px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 100px; /* Set a default height */
+}
+.update-module-container {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 10 10 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border-color: #1db029;
+
+    
+
+    margin: auto;
+}
+
+.update-module-container .task2 {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Other styles */
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable th, .timetable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.timetable .header {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.timetable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.timetable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Add this to your CSS file */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+/* Navigation Styling */
+.navlocation {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 125px; /* Adjusted for more space */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Ensures nav stays on top */
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Ensure content after nav doesn't overlap */
+body {
+    margin-left: calc(200px + 20px); /* Dynamic margin for body */
+    transition: margin-left 0.3s ease; /* Smooth margin transition */
+}
+
+/* Navigation links */
+.navlocation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width for links */
+}
+
+.navlocation ul li {
+    
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for list items */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.navlocation ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Highlight on hover */
+}
+
+.navlocation ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: bold; /* Bold text for better readability */
+    padding: 10px 15px; /* Padding inside links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navlocation ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    color: #ffd700; /* Highlight color */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative; /* Position relative to its container */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.9); /* Dropdown with slightly transparent background */
+    min-width: 160px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for dropdown */
+    z-index: 999; /* Ensures dropdown stays above other content */
+    top: 100%; /* Position below the dropdown trigger */
+    left: 0; /* Align with dropdown trigger */
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content ul li {
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for dropdown items */
+}
+
+.dropdown-content ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+}
+
+/* Container */
+.container {
+    max-width: 70%; /* Set a maximum width */
+    margin: 80px auto 20px auto; /* Center the container */
+    padding: 20px;
+    overflow: auto; /* Use 'auto' to add scrolling if content overflows */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+   
+    border-radius: 25px; /* Add rounded corners */
+    background-color: #fff; /* Set a background color for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for elevation effect */
+    height: 90%;
+}
+
+
+
+h1, h2 {
+    text-align: left;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1db029;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2abc73;
+}
+/* Style for the back button */
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff; /* Primary blue color */
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/* Styling the form and button */
+form .btn-back {
+    background-color: #3498db; /* Light blue background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for a button-like look */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+form .btn-back:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+form .btn-back:active {
+    background-color: #1e5f86; /* Even darker blue when clicked */
+    transform: translateY(0); /* Button lowers back on click */
+}
+
+/* Additional form styling (optional) */
+form {
+    display: inline-block; /* Ensure the form and button stay inline */
+    margin-top: 20px; /* Add some space above the form */
+}
+/* Form container styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Dropdown styling */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Dropdown hover and focus effects */
+select:hover, select:focus {
+    border-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 0 8px rgba(69, 160, 73, 0.5); /* Green shadow on focus */
+    outline: none;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    button.btn {
+        font-size: 14px;
+    }
+}
+/* Unique button style */
+.dashboard button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white; /* White text */
+    border: 2px solid transparent; /* Transparent border initially */
+    padding: 15px 30px; /* Padding for a larger button */
+    font-size: 18px; /* Larger text size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    letter-spacing: 1px; /* Space between letters */
+    border-radius: 50px; /* Fully rounded button */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Hover effect for buttons */
+.dashboard button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+    color: #fff; /* Keep the text white */
+    border-color: #fff; /* White border on hover */
+    transform: translateY(-5px); /* Lift button on hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Active state when button is clicked */
+.dashboard button:active {
+    transform: translateY(0); /* Reset lift */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Smaller shadow on click */
+}
+
+/* Button focus state */
+.dashboard button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0px 0px 10px rgba(37, 117, 252, 0.8); /* Focus shadow */
+}
+
+/* Responsive button layout for smaller screens */
+@media (max-width: 768px) {
+    .dashboard button {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 15px; /* Space between buttons */
+    }
+}
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px; /* Optional: to ensure text is readable */
+}
+
+.admin-table th, .admin-table td {
+    border: 2px solid #ccc; /* Increased border thickness for better visibility */
+    padding: 10px; /* More padding for readability */
+    text-align: left; /* Left-align text in table cells */
+}
+
+.admin-table th {
+    background-color: #e0e0e0; /* Slightly darker header background */
+    color: #333;
+    text-align: center; /* Center-align text in headers */
+}
+
+.admin-table td {
+    background-color: #fafafa;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Add zebra striping */
+}
+
+.admin-table tr:nth-child(odd) {
+    background-color: #fafafa; /* Retain original background */
+}
+.footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

@@ -1,0 +1,201 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Styling */
+.navlocation {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 125px; /* Adjusted for more space */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Ensures nav stays on top */
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Ensure content after nav doesn't overlap */
+body {
+    margin-left: calc(200px + 20px); /* Dynamic margin for body */
+    transition: margin-left 0.3s ease; /* Smooth margin transition */
+}
+
+/* Navigation links */
+.navlocation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width for links */
+}
+
+.navlocation ul li {
+    
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for list items */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.navlocation ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Highlight on hover */
+}
+
+.navlocation ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: bold; /* Bold text for better readability */
+    padding: 10px 15px; /* Padding inside links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navlocation ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    color: #ffd700; /* Highlight color */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative; /* Position relative to its container */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.9); /* Dropdown with slightly transparent background */
+    min-width: 160px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for dropdown */
+    z-index: 999; /* Ensures dropdown stays above other content */
+    top: 100%; /* Position below the dropdown trigger */
+    left: 0; /* Align with dropdown trigger */
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content ul li {
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for dropdown items */
+}
+
+.dropdown-content ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+}
+
+
+/* Main content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.diploma-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.diploma-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center items horizontally */
+}
+
+.diploma-image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.diploma-intro h2 {
+    color: #007BFF;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.diploma-intro p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.diploma-intro ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.diploma-intro li {
+    margin-bottom: 5px;
+}
+
+.footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.diplomas-intro {
+    text-align: center;
+}
+
+.diplomas-intro h1 {
+    color: #333;
+}
+.diploma-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.diploma-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+}
+.diploma-item h2 {
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.diploma-item p {
+    color: #666;
+}
